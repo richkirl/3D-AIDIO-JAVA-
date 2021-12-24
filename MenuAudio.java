@@ -82,18 +82,18 @@ public class MenuAudio {
                             if(file.getName().contains(".mp3")) {
                                 System.out.print("file:\t");
                                 System.out.println(file.getName());
-
+                                LameTest.test(file.getAbsolutePath());
                             }
                             if(file.getName().contains(".ogg")) {
                                 System.out.print("file:\t");
                                 System.out.println(file.getName());
-                                list.add(file.getAbsolutePath());
+                                //list.add(file.getAbsolutePath());
                                 VorbisTest.play(file.getAbsolutePath());
                             }
                             if(file.getName().contains(".wav")) {
                                 System.out.print("file:\t");
                                 System.out.println(file.getName());
-                                list.add(file.getAbsolutePath());
+                                //list.add(file.getAbsolutePath());
                                 WavFormS.play(file.getAbsolutePath());
                             }
                         }
