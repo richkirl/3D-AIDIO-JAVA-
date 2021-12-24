@@ -43,7 +43,8 @@ public class LameTest {
     public static void test(String s) throws IOException
     {
         byte[] wavBytes = decodeFromMp3(s);
-        FileOutputStream outFile = new FileOutputStream("C:\\Users\\lolii\\Desktop\\20211222-204048_.wav");
+        FileOutputStream outFile = new FileOutputStream("Temp\\20211222-204048_.wav");
+        //if(new File)
         outFile.write(wavBytes);
         outFile.flush();
         outFile.close();
@@ -334,3 +335,4 @@ public class LameTest {
 
     //}
 }
+
